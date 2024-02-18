@@ -4,6 +4,8 @@
 
 This sample contains a Microsoft Graph connector that shows how to Ingest M365 Roadmap content in Microsoft 365 using Microsoft Graph connectors. For each file, it M365 Roadmap content, maps them to the external connection's schema and ingests the content retaining the content and metadata. The ingested content is set to be visible to everyone in the organization.
 
+![M365 Roadmap Graph Connector](/GraphConnectorM365RoadMap/assets/M365-Roadmap-Graph%20connector.png)
+
 ## Version history
 
 Version|Date|Comments
