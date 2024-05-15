@@ -4,7 +4,8 @@
 
 This sample contains a Microsoft Graph connector that shows how to Ingest M365 Roadmap content in Microsoft 365 using Microsoft Graph connectors. For each file, it M365 Roadmap content, maps them to the external connection's schema and ingests the content retaining the content and metadata. The ingested content is set to be visible to everyone in the organization.
 
-![M365 Roadmap Graph Connector](/assets/M365-Roadmap-Graph%20connector.png)
+![M365 Roadmap Graph Connector](/assets/M365-Roadmap-Graph-Connector01.png)
+![M365 Roadmap Graph Connector](/assets/M365-Roadmap-Graph-Connector02.png)
 
 ## Contributors
 
@@ -15,6 +16,7 @@ This sample contains a Microsoft Graph connector that shows how to Ingest M365 R
 Version|Date|Comments
 -------|----|--------
 1.0|February 18, 2024|Initial release
+1.1|May 14, 2024|Updated README.md, resultsLayout Json
 
 ## Prerequisites
 
@@ -32,8 +34,11 @@ Version|Date|Comments
     - dotnet user-secrets set "AzureAd:TenantId" Tenant-Id-value
 - Build the project: `dotnet build`
 - Change the working directory to the path to where the project file is present.
-- Create the external connection: `./connector create-connection` (this will take several minutes)
-- Ingest the content: `./connector load-content`
+- Create the external connection: `dotnet run --provision-connection` (this will take several minutes)
+- Ingest the content: `dotnet run --load-content`
+
+## Results Layout
+- Browse to the admin center then Search & intelligence then update the result layout with the resultLayout json file in the assets folder. You can modify the resultLayout using adaptive cards designer to have your custom resultLayout.
 
 ## Features
 This sample shows how to Ingest M365 Roadmap content in Microsoft 365 using Microsoft Graph connectors using C# and .NET
